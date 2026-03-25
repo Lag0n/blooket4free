@@ -1062,7 +1062,39 @@
             reader.readAsText(file);
         });
 
-        async function renderPacksAsync() {
+        // Define the pack names for each category (replace these with your actual pack 'name' properties)
+const spookyPackNames = ["Spooky1", "Spooky2", "Spooky3"]; // Replace with your actual spooky pack names
+const blizzardPackNames = ["Blizzard1", "Blizzard2", "Blizzard3"]; // Replace with your blizzard pack names
+const autumnPackNames = ["Autumn1", "Autumn2"]; // Replace with your autumn pack names
+
+async function renderPacksAsync() {
+    let allPacks = packData.concat(seasonalPackData).concat(freePackData);
+
+    // Merge specific packs into one for each category
+    const mergedSpooky = mergePacks(allPacks, spookyPackNames);
+    const mergedBlizzard = mergePacks(allPacks, blizzardPackNames);
+    const mergedAutumn = mergePacks(allPacks, autumnPackNames);
+
+    // Remove original packs from allPacks
+    const removePacksByNames = (packs, names) => packs.filter(p => !names.includes(p.name));
+    allPacks = removePacksByNames(allPacks, [...spookyPackNames, ...blizzardPackNames, ...autumnPackNames]);
+
+    // Add the merged packs
+    if (mergedSpooky) allPacks.push(mergedSpooky);
+    if (mergedBlizzard) allPacks.push(mergedBlizzard);
+    if (mergedAutumn) allPacks.push(mergedAutumn);
+
+    // Continue with your existing rendering code...
+    document.getElementById("packContainer").innerHTML = "";
+
+    const defaultPacksCount = packData.length + seasonalPackData.length + freePackData.length;
+
+    const firstAsset = (val) => Array.isArray(val) ? val[0] : val;
+
+    for (let i = 0; i < allPacks.length; i++) {
+        // ... (rest of your rendering code)
+    }
+}
             let allPacks = await getAllPacks();
             allPacks = processPacks(allPacks);
 
