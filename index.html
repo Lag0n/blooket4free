@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Blooket4Free | Market</title>
@@ -17,23 +16,19 @@
             height: 100%;
             width: 100%;
         }
-
         .bodyContainer {
             display: flex;
             left: 0;
             top: 0;
         }
-
         .leftContainer {
             width: 100%;
         }
-
         .scrollWrapper {
             width: 100%;
             overflow: auto;
             padding-bottom: 20px;
         }
-
         .packContainer {
             display: grid;
             grid-template-columns: repeat(auto-fill, 210px);
@@ -44,7 +39,6 @@
             overflow: visible;
             padding-bottom: 10px;
         }
-
         .pack {
             width: 210px;
             height: 210px;
@@ -58,11 +52,9 @@
             transform: translate(-50%, -50%);
             transition: .2s;
         }
-
         .pack:hover {
             transform: scale(.95) translate(-52.5%, -52.5%);
         }
-
         .pngContainer {
             height: 100%;
             position: relative;
@@ -70,7 +62,6 @@
             left: 50%;
             transform: translate(-50%, -50%) rotate(10deg);
         }
-
         .pngBg {
             width: 70%;
             filter: brightness(0) invert(100%);
@@ -80,7 +71,6 @@
             left: 50%;
             transform: translate(-50%, -50%);
         }
-
         .pngMain {
             width: 65%;
             position: absolute;
@@ -88,7 +78,6 @@
             left: 50%;
             transform: translate(-50%, -50%);
         }
-
         .title {
             width: 100%;
             font-size: calc(2vh + 3vw);
@@ -100,12 +89,10 @@
             margin-top: 1vw;
             text-shadow: 4px 4px var(--gray-shadow);
         }
-
         .packWrapper {
             position: relative;
             display: inline-block;
         }
-
         .packWrapper .tooltip {
             visibility: hidden;
             opacity: 0;
@@ -126,7 +113,6 @@
             transform: translateX(-50%);
             text-align: center;
         }
-
         .packWrapper .tooltip::after {
             content: "";
             position: absolute;
@@ -137,23 +123,19 @@
             border-style: solid;
             border-color: rgba(34, 34, 34, 0.8) transparent transparent transparent;
         }
-
         .packWrapper .tooltip.below {
             top: 110%;
             bottom: auto;
         }
-
         .packWrapper .tooltip.below::after {
             top: auto;
             bottom: 100%;
             border-color: transparent transparent rgba(34, 34, 34, 0.8) transparent;
         }
-
         .packWrapper:hover .tooltip {
             visibility: visible;
             opacity: 1;
         }
-
         .darkOverlay {
             position: absolute;
             top: 0;
@@ -163,7 +145,6 @@
             background: rgba(0, 0, 0, 0.6);
             z-index: 1;
         }
-
         .lockIcon {
             position: absolute;
             top: 50%;
@@ -172,7 +153,6 @@
             width: 40%;
             z-index: 2;
         }
-
         #sidebar {
             position: fixed;
             top: 0;
@@ -182,11 +162,9 @@
             transition: left 0.3s ease;
             z-index: 1005;
         }
-
         #sidebar.active {
             left: 0;
         }
-
         #overlay {
             position: fixed;
             top: 0;
@@ -197,11 +175,9 @@
             display: none;
             z-index: 1004;
         }
-
         #overlay.active {
             display: block;
         }
-
         .hamburger {
             position: fixed;
             top: 35px;
@@ -213,18 +189,15 @@
             cursor: pointer;
             z-index: 1003;
         }
-
         .hamburger img {
             width: 30px;
             height: 30px;
             filter: drop-shadow(4px 4px var(--gray-shadow));
             transition: transform 0.2s;
         }
-
         .hamburger img:hover {
             transform: scale(0.95);
         }
-
         #closeSidebar {
             position: absolute;
             top: 10px;
@@ -234,23 +207,19 @@
             font-size: 22px;
             cursor: pointer;
         }
-
         .Sidebar_logoDesktop__NeFcd {
             display: block !important;
             margin: 0 auto 0 !important;
             width: 80% !important;
         }
-
         @media (max-width: 625px) {
             .Sidebar_logoDesktop__NeFcd {
                 margin-top: 20px !important;
             }
         }
-
         #sidebar.Sidebar_sidebar__J7H_G {
             justify-content: flex-start !important;
         }
-
         .blookBgShadow {
             position: absolute;
             bottom: 0;
@@ -262,7 +231,6 @@
             border-bottom-right-radius: calc(0.721vw * 1.15);
             pointer-events: none;
         }
-
         .packYear {
             display: flex;
             flex-direction: row;
@@ -281,7 +249,6 @@
             bottom: 12px;
             left: 0;
         }
-
         .delete-pack-btn {
             position: absolute;
             top: 8px;
@@ -302,15 +269,12 @@
             z-index: 10;
             line-height: 1;
         }
-
         .delete-pack-btn:hover {
             transform: scale(1.1);
         }
-
         .packWrapper:hover .delete-pack-btn {
             opacity: 1;
         }
-
         .custom-pack-badge {
             position: absolute;
             top: 8px;
@@ -325,7 +289,6 @@
             font-family: 'Titan One', sans-serif;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
         }
-
         .uploadBtn {
             background: var(--purple);
             color: white;
@@ -341,12 +304,10 @@
             font-size: 20px;
             transition: transform 0.2s ease;
         }
-
         .uploadBtn:hover {
             transform: scale(0.95);
         }
     </style>
-
     <link rel="stylesheet" href="https://ac.blooket.com/dashboard/ee3082e9bdda941fdd8418c7b00c1d2ee1cd3a73/_next/static/css/121a1462914990a5.css" data-precedence="next">
     <link rel="stylesheet" href="https://ac.blooket.com/dashboard/ee3082e9bdda941fdd8418c7b00c1d2ee1cd3a73/_next/static/css/7d2a7f4491889bcd.css" data-precedence="next">
     <link rel="stylesheet" href="https://ac.blooket.com/dashboard/ee3082e9bdda941fdd8418c7b00c1d2ee1cd3a73/_next/static/css/43cb5a8b08a4fd81.css" data-precedence="next">
@@ -355,9 +316,7 @@
     <link rel="stylesheet" href="https://ac.blooket.com/dashboard/ee3082e9bdda941fdd8418c7b00c1d2ee1cd3a73/_next/static/css/51e88ac748998e08.css" data-precedence="next">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
 <body>
-
     <nav id="sidebar" class="Sidebar_sidebar__J7H_G">
         <img alt="Blooket" loading="lazy" width="168" decoding="async" data-nimg="1" class="Sidebar_logoDesktop__NeFcd"
             src="./assets/misc_images/logo.png">
@@ -394,22 +353,17 @@
             </li>
         </ul>
     </nav>
-
     <div id="overlay"></div>
-
     <button id="hamburgerBtn" class="hamburger">
         <img src="./assets/misc_images/borgor.svg" alt="Menu">
     </button>
-
     <div class="_background_l90pt_1" style="background:linear-gradient(#0bc2cf,#349aef)">
         <div class="_checkers_l90pt_12" style="background-size:1000px"></div>
     </div>
-
     <div class="scrollWrapper">
         <div class="title">Blooket4Free</div>
         <div class="packContainer" id="packContainer"></div>
         <div style="height: 15px;"></div>
-
         <div style="text-align:center; margin: 30px;">
             <input type="file" id="bpkUpload" accept=".bpk,application/json" style="display:none;">
             <button id="uploadBtn" class="uploadBtn">
@@ -417,7 +371,6 @@
             </button>
         </div>
     </div>
-
     <div id="unlockScreen" style="display:none;">
         <div id="background" class="styles__openBackground___-U4oX-camelCase">
             <img id="cornerIcon" alt="Icon" class="styles__cornerIcon___24o3Z-camelCase" draggable="false">
@@ -436,7 +389,6 @@
                 </div>
                 <div id="unlockChance" class="styles__bottomText___3_k10-camelCase"></div>
             </div>
-
             <div class="styles__openPackContainer___2m4Yf-camelCase">
                 <div>
                     <img class="styles__packImage___1jX3J-camelCase" id="packBottom">
@@ -444,16 +396,19 @@
                         style="background-image:url('https://blacket.org/content/packSeelOpen.webp');"></div>
                 </div>
             </div>
-
             <div class="styles__openBigButton___3KmDM-camelCase styles__canOpen___2znG2-camelCase" role="button"
                 tabindex="0"></div>
         </div>
     </div>
-
     <script src="./assets/js/packdata.js"></script>
     <script src="./assets/js/seasonalpackdata.js"></script>
     <script src="./assets/js/freepackdata.js"></script>
     <script src="./assets/js/indexed-db.js"></script>
+
+    <!-- OVERRIDE: Removed all 5 animal packs (Farm, Pet, Forest, Tropical, Arctic) -->
+    <script>
+        const freePackData = [];
+    </script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -461,11 +416,9 @@
                 alert("Hello! This website is not at all made for mobile devices. For the best experience, go open this on a computer. \n \n(If you are on a computer and see this message, just rezise the window.)");
             }
         });
-
         let currentResult = null;
         let currentPack = null;
         let opened = false;
-
         function rarityColor(rarity) {
             if (rarity == "Uncommon") return "#2ecc40";
             if (rarity == "Rare") return "rgb(10,20,250)";
@@ -476,7 +429,6 @@
             if (rarity == "Unique") return "teal";
             return "#fff";
         }
-
         function rollBlook(pack) {
             const roll = Math.random() * 100;
             let cumulative = 0, index = 0;
@@ -491,60 +443,47 @@
                 chance: pack.chance[index]
             };
         }
-
         function showUnlock(result, pack) {
             currentResult = result;
             currentPack = pack;
             opened = false;
-
             document.getElementById("unlockName").innerText = result.name.replace(/_custom$/, "");
             document.getElementById("unlockRarity").innerText = result.rarity;
             document.getElementById("unlockRarity").style.color = rarityColor(result.rarity);
             document.getElementById("unlockImg").src = result.svg;
-
             let stored = JSON.parse(localStorage.getItem("blooksCollection")) || {};
             let count = stored[result.name] || 0;
-
             if (count === 0) {
                 document.getElementById("unlockChance").innerText = result.chance + "% - NEW!";
             } else {
                 document.getElementById("unlockChance").innerText = result.chance + "%";
             }
-
             const idx = pack.blook.indexOf(result.name);
-
             const pickAsset = (val) => {
                 if (Array.isArray(val)) {
                     return val[idx] ?? val[0];
                 }
                 return val;
             };
-
             document.getElementById("background").style.background = pickAsset(pack.bg);
             document.getElementById("blookBg").src = pickAsset(pack.blookBackground);
             document.getElementById("cornerIcon").src = pickAsset(pack.cornerIcon);
             document.getElementById("packBottom").src = pickAsset(pack.packBottom);
-
             const unlockNameElement = document.getElementById("unlockName");
             const unlockContainer = document.querySelector(".styles__unlockedBlook___2pr1Z-camelCase");
-
             setTimeout(() => {
                 resizeTextToFit(unlockNameElement, unlockContainer);
             }, 10);
-
             const openContainer = document.querySelector(".styles__openContainer___3paFG-camelCase");
             if (openContainer) openContainer.className = "styles__openContainer___3paFG-camelCase";
-
             const packDiv = document.querySelector(".styles__openPack___3QxCP-camelCase");
             if (packDiv) {
                 packDiv.style.display = "block";
                 packDiv.className = "styles__openPack___3QxCP-camelCase";
             }
-
             document.getElementById("unlockScreen").style.display = "block";
             document.getElementById("hamburgerBtn").style.display = "none";
         }
-
         function closeUnlock() {
             document.getElementById("unlockScreen").style.display = "none";
             document.getElementById("packContainer").style.visibility = "visible";
@@ -552,51 +491,40 @@
             currentResult = null;
             currentPack = null;
             opened = false;
-
             const unlockNameElement = document.getElementById("unlockName");
             unlockNameElement.style.fontSize = "2vw";
-
             const pack = document.querySelector(".styles__openPack___3QxCP-camelCase");
             if (pack) {
                 pack.style.display = "block";
                 pack.classList.remove("styles__isOpeningPack___1qY5t-camelCase");
             }
-
             const packBottom = document.querySelector(".styles__packImage___1jX3J-camelCase");
             if (packBottom) {
                 packBottom.classList.remove("styles__wigglingPackBottom___4F3d2-camelCase");
             }
-
             const packContainer = document.querySelector(".styles__openPackContainer___2m4Yf-camelCase");
             if (packContainer) {
                 packContainer.classList.remove("styles__openingPackContainer___1ZQzY-camelCase");
             }
-
             const openContainer = document.querySelector(".styles__openContainer___3paFG-camelCase");
             if (openContainer) {
                 openContainer.className = "styles__openContainer___3paFG-camelCase";
             }
-
             const background = document.getElementById("background");
             if (background) {
                 background.classList.remove("styles__openBackgroundActive___3WzzZ-camelCase");
             }
-
             document.getElementById("phaser-canvas").innerHTML = "";
         }
-
         function playOpenAnimation(rarity) {
             const pack = document.querySelector(".styles__openPack___3QxCP-camelCase");
             const packContainer = document.querySelector(".styles__openPackContainer___2m4Yf-camelCase");
             const openContainer = document.querySelector(".styles__openContainer___3paFG-camelCase");
             const background = document.getElementById("background");
             const packBottom = document.querySelector(".styles__packImage___1jX3J-camelCase");
-
             if (!pack || !packContainer || !openContainer || !packBottom) return;
-
             pack.classList.add("styles__isOpeningPack___1qY5t-camelCase");
             packBottom.classList.add("styles__wigglingPackBottom___4F3d2-camelCase");
-
             pack.addEventListener("animationend", () => {
                 pack.style.display = "none";
                 packContainer.classList.add("styles__openingPackContainer___1ZQzY-camelCase");
@@ -610,24 +538,20 @@
                 if (rarity === "mystical") openContainer.classList.add("styles__openingContainerChroma___3VBd5-camelCase");
                 if (rarity === "unique") openContainer.classList.add("styles__openingContainerChroma___3VBd5-camelCase");
                 if (background) background.classList.add("styles__openBackgroundActive___3WzzZ-camelCase");
-
                 setTimeout(() => {
                     document.getElementById("phaser-canvas").innerHTML = "";
                     startParticle(rarity);
                 }, 1);
-
                 setTimeout(() => {
                     opened = true;
                 }, 400);
             }, { once: true });
         }
-
         document.getElementById("background").addEventListener("click", (e) => {
             if (opened) {
                 closeUnlock();
             }
         });
-
         window.addEventListener('resize', () => {
             if (currentResult && document.getElementById("unlockScreen").style.display !== "none") {
                 const unlockNameElement = document.getElementById("unlockName");
@@ -637,16 +561,13 @@
                 }, 100);
             }
         });
-
         let debugOffset = 0;
-
         function getDaysSinceRef() {
             const refDate = new Date("2025-09-15T00:00:00Z");
             const today = new Date();
             today.setHours(0, 0, 0, 0);
             return Math.floor((today - refDate) / (1000 * 60 * 60 * 24)) + debugOffset;
         }
-
         function processPacks(packs) {
             return packs.map(pack => {
                 if (pack.colorBlook && pack.colorBlook.length > 0) {
@@ -655,83 +576,47 @@
                     newPack.rarity = [...newPack.rarity];
                     newPack.svg = [...newPack.svg];
                     newPack.chance = [...newPack.chance];
-
                     const idx = getDaysSinceRef() % pack.colorBlook.length;
                     const last = newPack.blook.length - 1;
                     newPack.blook[last] = pack.colorBlook[idx];
                     if (pack.colorRarity) newPack.rarity[last] = pack.colorRarity[idx];
                     if (pack.colorSvg) newPack.svg[last] = pack.colorSvg[idx];
                     if (pack.colorChance) newPack.chance[last] = pack.colorChance[idx];
-
                     return newPack;
                 }
                 return pack;
             });
         }
-
-        /**
-         * Merges multiple packs (by id prefix) into one combined pack.
-         * Deduplicates blooks by name — first occurrence wins (preserves original chance/rarity/svg).
-         * The merged pack uses the visual assets of the most recent pack in the group.
-         */
         function buildMergedPacks(allPacks) {
-            // Groups: array of { ids (prefixes to match), mergedName, mergedId }
             const groups = [
-                {
-                    test: p => p.id && p.id.startsWith("spooky"),
-                    mergedName: "Spooky",
-                    mergedId: "spooky_merged"
-                },
-                {
-                    test: p => p.id && p.id.startsWith("autumn"),
-                    mergedName: "Autumn",
-                    mergedId: "autumn_merged"
-                },
-                {
-                    test: p => p.id && p.id.startsWith("blizzard"),
-                    mergedName: "Blizzard",
-                    mergedId: "blizzard_merged"
-                }
+                { test: p => p.id && p.id.startsWith("spooky"), mergedName: "Spooky", mergedId: "spooky_merged" },
+                { test: p => p.id && p.id.startsWith("autumn"), mergedName: "Autumn", mergedId: "autumn_merged" },
+                { test: p => p.id && p.id.startsWith("blizzard"), mergedName: "Blizzard", mergedId: "blizzard_merged" }
             ];
-
             const groupedPacks = groups.map(g => ({
                 ...g,
                 packs: allPacks.filter(p => g.test(p))
             }));
-
             const idsToRemove = new Set();
             groupedPacks.forEach(g => g.packs.forEach(p => idsToRemove.add(p.id)));
-
-            // Remove originals from allPacks
             let remaining = allPacks.filter(p => !idsToRemove.has(p.id));
-
-            // Build each merged pack
             groupedPacks.forEach(g => {
                 if (g.packs.length === 0) return;
-
-                // Use the last (most recent) pack for visual assets
                 const representative = g.packs[g.packs.length - 1];
-
                 const seenNames = new Set();
                 const mergedBlook = [];
                 const mergedRarity = [];
                 const mergedSvg = [];
                 const mergedChance = [];
-
-                // Also collect colorBlooks (rotating) — deduplicate separately
                 const seenColorNames = new Set();
                 const mergedColorBlook = [];
                 const mergedColorRarity = [];
                 const mergedColorSvg = [];
-
                 g.packs.forEach(pack => {
-                    // Expand colorBlooks into regular blooks first (so they get included),
-                    // but also keep them as colorBlooks for the rotating slot
                     const blooks = pack.blook || [];
                     const rarities = pack.rarity || [];
                     const svgs = pack.svg || [];
                     const chances = pack.chance || [];
-
                     blooks.forEach((name, i) => {
                         if (!seenNames.has(name)) {
                             seenNames.add(name);
@@ -741,38 +626,23 @@
                             mergedChance.push(chances[i] || 0);
                         }
                     });
-
-                    // Collect colorBlooks (rotating blooks)
                     if (pack.colorBlook && pack.colorBlook.length > 0) {
                         pack.colorBlook.forEach((name, i) => {
                             if (!seenColorNames.has(name) && !seenNames.has(name)) {
                                 seenColorNames.add(name);
                                 seenNames.add(name);
                                 mergedColorBlook.push(name);
-                                mergedColorRarity.push(
-                                    pack.colorRarity ? pack.colorRarity[i] : "Chroma"
-                                );
-                                mergedColorSvg.push(
-                                    pack.colorSvg ? pack.colorSvg[i] : ""
-                                );
+                                mergedColorRarity.push(pack.colorRarity ? pack.colorRarity[i] : "Chroma");
+                                mergedColorSvg.push(pack.colorSvg ? pack.colorSvg[i] : "");
                             }
                         });
                     }
                 });
-
-                // Normalize chances so they sum to 100
                 const totalChance = mergedChance.reduce((a, b) => a + b, 0);
-                const normalizedChance = mergedChance.map(c =>
-                    parseFloat((c / totalChance * 100).toFixed(4))
-                );
-
-                // Fix floating point so it sums exactly to 100
+                const normalizedChance = mergedChance.map(c => parseFloat((c / totalChance * 100).toFixed(4)));
                 const normalizedSum = normalizedChance.reduce((a, b) => a + b, 0);
                 const diff = parseFloat((100 - normalizedSum).toFixed(4));
-                if (normalizedChance.length > 0) {
-                    normalizedChance[0] = parseFloat((normalizedChance[0] + diff).toFixed(4));
-                }
-
+                if (normalizedChance.length > 0) normalizedChance[0] = parseFloat((normalizedChance[0] + diff).toFixed(4));
                 const mergedPack = {
                     name: g.mergedName,
                     id: g.mergedId,
@@ -791,60 +661,42 @@
                     comingSoon: false,
                     tileBackground: representative.tileBackground
                 };
-
                 remaining.push(mergedPack);
             });
-
             return remaining;
         }
-
         function resizeTextToFit(textElement) {
             let fontSizeVW = 2.5;
             textElement.style.fontSize = fontSizeVW + 'vw';
-
             const container = textElement.parentElement;
             const maxWidth = container.offsetWidth * 0.95;
             const maxHeight = container.offsetHeight * 0.9;
-
             let computedSize = parseFloat(window.getComputedStyle(textElement).fontSize);
-
             while (textElement.scrollWidth > maxWidth || textElement.scrollHeight > maxHeight) {
                 fontSizeVW -= 0.01;
                 textElement.style.fontSize = fontSizeVW + 'vw';
                 computedSize = parseFloat(window.getComputedStyle(textElement).fontSize);
             }
-
-            if (fontSizeVW < 0) {
-                fontSizeVW = 2;
-                textElement.style.fontSize = fontSizeVW + 'vw';
-            }
-
-            if (window.innerWidth <= 625) {
-                fontSizeVW = fontSizeVW * 2.525;
-                textElement.style.fontSize = fontSizeVW + 'vw';
-            }
+            if (fontSizeVW < 0) fontSizeVW = 2;
+            if (window.innerWidth <= 625) fontSizeVW = fontSizeVW * 2.525;
+            textElement.style.fontSize = fontSizeVW + 'vw';
         }
     </script>
-
     <script>
         const hamburgerBtn = document.getElementById('hamburgerBtn');
         const sidebar = document.getElementById('sidebar');
         const overlay = document.getElementById('overlay');
-
         function openSidebar() {
             sidebar.classList.add('active');
             overlay.classList.add('active');
         }
-
         function closeSidebarMenu() {
             sidebar.classList.remove('active');
             overlay.classList.remove('active');
         }
-
         hamburgerBtn.addEventListener('click', openSidebar);
         overlay.addEventListener('click', closeSidebarMenu);
     </script>
-
     <script>
         function initBlooksStorage(allBlooks) {
             let stored = JSON.parse(localStorage.getItem("blooksCollection")) || {};
@@ -855,19 +707,16 @@
             });
             localStorage.setItem("blooksCollection", JSON.stringify(stored));
         }
-
         function addBlookToStorage(blookName) {
             let stored = JSON.parse(localStorage.getItem("blooksCollection")) || {};
-            if (!(blookName in stored)) {
-                stored[blookName] = 0;
-            }
+            if (!(blookName in stored)) stored[blookName] = 0;
             stored[blookName] += 1;
             localStorage.setItem("blooksCollection", JSON.stringify(stored));
         }
-
         function getAllBlooks() {
             let all = [];
-            const packs = packData.concat(freePackData).concat(seasonalPackData);
+            // freePackData removed entirely (Farm/Pet/Forest/Tropical/Arctic packs are gone)
+            const packs = packData.concat(seasonalPackData);
             packs.forEach(pack => {
                 let packBlooks = [...pack.blook];
                 if (pack.colorBlook && pack.colorBlook.length > 0) {
@@ -878,17 +727,13 @@
             });
             return [...new Set(all)];
         }
-
         initBlooksStorage(getAllBlooks());
-
         const originalShowUnlock = showUnlock;
         showUnlock = function (result, pack) {
             originalShowUnlock(result, pack);
             addBlookToStorage(result.name);
         };
-
         let lastCheckedDay = getDaysSinceRef();
-
         function checkForDayChange() {
             const currentDay = getDaysSinceRef();
             if (currentDay !== lastCheckedDay) {
@@ -897,31 +742,25 @@
                 renderPacksAsync();
             }
         }
-
         setInterval(checkForDayChange, 60000);
-
         document.addEventListener('visibilitychange', function () {
-            if (!document.hidden) {
-                checkForDayChange();
-            }
+            if (!document.hidden) checkForDayChange();
         });
     </script>
-
     <script src="./assets/js/particles.js"></script>
-
     <script>
         window.addEventListener('beforeunload', function (e) {
             e.preventDefault();
             e.returnValue = '';
         });
     </script>
-
     <script>
         function ensureAllBlooksInStorage() {
             let stored = JSON.parse(localStorage.getItem("blooksCollection")) || {};
             let updated = false;
+            // freePackData removed entirely
+            const defaultPacks = packData.concat(seasonalPackData);
 
-            const defaultPacks = packData.concat(seasonalPackData).concat(freePackData);
             defaultPacks.forEach(pack => {
                 let packBlooks = [...pack.blook];
                 if (pack.colorBlook && pack.colorBlook.length > 0) {
@@ -941,7 +780,6 @@
             }
             return stored;
         }
-
         async function loadCustomPacks() {
             try {
                 return await packDB.loadCustomPacks();
@@ -950,140 +788,94 @@
                 return [];
             }
         }
-
         async function getAllPacks() {
-            // Start with all default packs
             let allPacks = packData.concat(seasonalPackData).concat(freePackData);
-
-            // Build merged Spooky / Autumn / Blizzard packs (replaces originals)
             allPacks = buildMergedPacks(allPacks);
-
-            // Apply color-blook rotation
             allPacks = processPacks(allPacks);
-
-            // Append custom packs
             const customPacks = await loadCustomPacks();
             return allPacks.concat(customPacks);
         }
-
         document.getElementById("uploadBtn").addEventListener("click", () => {
             document.getElementById("bpkUpload").click();
         });
-
         document.getElementById("bpkUpload").addEventListener("change", async (event) => {
             const file = event.target.files[0];
             if (!file) return;
-
             const reader = new FileReader();
             reader.onload = async function (e) {
                 try {
                     let text = e.target.result;
-
                     if (text.startsWith("data:")) {
                         const base64 = text.split(",")[1];
                         text = atob(base64);
                     }
-
                     text = text.replace(/^\uFEFF/, "");
-
                     let newPack = JSON.parse(text);
-
                     ["blook", "rarity", "chance", "svg"].forEach(key => {
                         if (!Array.isArray(newPack[key])) newPack[key] = [];
                     });
-
                     let stored = ensureAllBlooksInStorage();
-
                     newPack.blook = newPack.blook.map(name => name + "_custom");
-
                     if (Array.isArray(newPack.colorBlook)) {
                         newPack.colorBlook = newPack.colorBlook.map(name => name + "_custom");
                     }
-
-                    newPack.blook.forEach(b => {
-                        if (!(b in stored)) stored[b] = 0;
-                    });
-
+                    newPack.blook.forEach(b => { if (!(b in stored)) stored[b] = 0; });
                     if (Array.isArray(newPack.colorBlook)) {
-                        newPack.colorBlook.forEach(b => {
-                            if (!(b in stored)) stored[b] = 0;
-                        });
+                        newPack.colorBlook.forEach(b => { if (!(b in stored)) stored[b] = 0; });
                     }
-
                     localStorage.setItem("blooksCollection", JSON.stringify(stored));
-
                     await packDB.addCustomPack(newPack);
-
                     document.getElementById("packContainer").innerHTML = "";
                     await renderPacksAsync();
-
                     event.target.value = '';
-
                 } catch (err) {
                     alert("Invalid .bpk file: " + err.message);
                 }
             };
             reader.readAsText(file);
         });
-
         async function renderPacksAsync() {
             let allPacks = await getAllPacks();
-
             document.getElementById("packContainer").innerHTML = "";
-
-            // Count how many packs are non-custom (for custom badge index tracking)
             const defaultPacksProcessed = allPacks.filter(p => !p._isCustom).length;
-
             const firstAsset = (val) => Array.isArray(val) ? val[0] : val;
-
             let customIndex = 0;
-
             for (let i = 0; i < allPacks.length; i++) {
                 const wrapper = document.createElement("div");
                 wrapper.classList.add("packWrapper");
-
                 const newPack = document.createElement("div");
                 newPack.classList.add("pack");
                 newPack.style.backgroundImage = firstAsset(allPacks[i].bg);
                 wrapper.appendChild(newPack);
-
                 const pngContainer = document.createElement("div");
                 pngContainer.classList.add('pngContainer');
                 newPack.appendChild(pngContainer);
-
                 const pngBg = document.createElement("img");
                 pngBg.src = firstAsset(allPacks[i].png);
                 pngBg.classList.add('pngBg');
                 pngContainer.appendChild(pngBg);
-
                 const pngMain = document.createElement("img");
                 pngMain.src = firstAsset(allPacks[i].png);
                 pngMain.classList.add('pngMain');
                 pngContainer.appendChild(pngMain);
-
                 if (allPacks[i].year) {
                     const packBottomDiv = document.createElement("div");
                     packBottomDiv.classList.add("packYear");
                     packBottomDiv.innerText = allPacks[i].year;
                     newPack.appendChild(packBottomDiv);
                 }
-
-                // Custom pack badge + delete button
                 if (allPacks[i]._isCustom !== undefined ? allPacks[i]._isCustom : i >= defaultPacksProcessed) {
                     const thisCIndex = customIndex++;
-
                     const badge = document.createElement('div');
                     badge.className = 'custom-pack-badge';
                     badge.textContent = 'Custom';
                     newPack.appendChild(badge);
-
                     const deleteBtn = document.createElement('div');
                     deleteBtn.className = 'delete-pack-btn';
                     deleteBtn.innerHTML = `<svg aria-hidden="true" focusable="false" viewBox="0 0 352 512" xmlns="http://www.w3.org/2000/svg" style="width:16px;height:16px;">
                         <path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path>
                     </svg>`;
                     deleteBtn.title = 'Delete custom pack';
-
                     deleteBtn.addEventListener('click', async (e) => {
                         e.stopPropagation();
                         if (confirm('Delete this custom pack? This cannot be undone.')) {
@@ -1092,25 +884,19 @@
                             await renderPacksAsync();
                         }
                     });
-
                     newPack.appendChild(deleteBtn);
                 }
-
                 const tooltip = document.createElement("div");
                 tooltip.classList.add("tooltip");
-
                 if (allPacks[i].comingSoon) {
                     tooltip.innerHTML = "Coming Soon";
-
                     const overlay = document.createElement("div");
                     overlay.classList.add("darkOverlay");
                     newPack.appendChild(overlay);
-
                     const lock = document.createElement("img");
                     lock.src = "./assets/misc_images/lock.svg";
                     lock.classList.add("lockIcon");
                     newPack.appendChild(lock);
-
                 } else {
                     let tooltipHtml = "<strong>Pack Rates:</strong><br>";
                     for (let j = 0; j < allPacks[i].blook.length; j++) {
@@ -1118,18 +904,14 @@
                         tooltipHtml += `${displayName}: ${allPacks[i].chance[j]}%<br>`;
                     }
                     tooltip.innerHTML = tooltipHtml;
-
                     newPack.addEventListener("click", function () {
                         const result = rollBlook(allPacks[i]);
                         document.getElementById("packContainer").style.visibility = "hidden";
                         showUnlock(result, allPacks[i]);
                     });
-
                     document.getElementById("packContainer").appendChild(wrapper);
                 }
-
                 wrapper.appendChild(tooltip);
-
                 wrapper.addEventListener("mouseenter", () => {
                     const rect = wrapper.getBoundingClientRect();
                     if (rect.top < 200) {
@@ -1140,7 +922,6 @@
                 });
             }
         }
-
         const openButton = document.querySelector(".styles__openBigButton___3KmDM-camelCase");
         if (openButton) {
             openButton.addEventListener("click", () => {
@@ -1149,12 +930,9 @@
                 }
             });
         }
-
         $(document).ready(async function () {
             await renderPacksAsync();
         });
     </script>
-
 </body>
-
 </html>
