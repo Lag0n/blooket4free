@@ -1,0 +1,1 @@
+Hello! This is Lag0n that forked and reuploded blooket4free! The creator (HippoWaterMelon) vercel account was banned for unknown reasons so i brought this back up! If you have any requests for the game please dm me on Discord: lag0n_ or go to my https://guns.lol/lag0n for other contact info and my email!
